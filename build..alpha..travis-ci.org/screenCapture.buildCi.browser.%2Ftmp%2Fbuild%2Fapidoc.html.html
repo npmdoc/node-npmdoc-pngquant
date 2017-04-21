@@ -1,0 +1,592 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>pngquant (v1.2.0)</a>
+</h1>
+<h4>The pngquant utility as a readable/writable stream</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pngquant">module pngquant</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.pngquant">
+            function <span class="apidocSignatureSpan"></span>pngquant
+            <span class="apidocSignatureSpan">(pngQuantArgs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath">
+            function <span class="apidocSignatureSpan">pngquant.</span>getBinaryPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.setBinaryPath">
+            function <span class="apidocSignatureSpan">pngquant.</span>setBinaryPath
+            <span class="apidocSignatureSpan">(binaryPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.super_">
+            function <span class="apidocSignatureSpan">pngquant.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.</span>getBinaryPath.cache</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pngquant.getBinaryPath">module pngquant.getBinaryPath</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.getBinaryPath">
+            function <span class="apidocSignatureSpan">pngquant.</span>getBinaryPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.argumentsStringifier">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>argumentsStringifier
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.getAge">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>getAge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.getTtl">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>getTtl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.peek">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>peek
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.purge">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>purge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.purgeAll">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>purgeAll
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>cache</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>refreshAge</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>cacheKeyPrefix</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pngquant.getBinaryPath.cache">module pngquant.getBinaryPath.cache</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_allowStale</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pngquant.getBinaryPath.cache._lengthCalculator">
+            function <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_lengthCalculator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_itemCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_length</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_lru</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_max</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_mru</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_cache</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_lruList</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_maxAge</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pngquant" id="apidoc.module.pngquant">module pngquant</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.pngquant" id="apidoc.element.pngquant.pngquant">
+        function <span class="apidocSignatureSpan"></span>pngquant
+        <span class="apidocSignatureSpan">(pngQuantArgs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PngQuant(pngQuantArgs) {
+    Stream.call(this);
+
+    this.pngQuantArgs = pngQuantArgs;
+
+    if (!this.pngQuantArgs || this.pngQuantArgs.length === 0) {
+        this.pngQuantArgs = [256];
+    }
+
+    this.writable = this.readable = true;
+
+    this.hasEnded = false;
+    this.seenDataOnStdout = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath" id="apidoc.element.pngquant.getBinaryPath">
+        function <span class="apidocSignatureSpan">pngquant.</span>getBinaryPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function memoizer() { // ...
+    var that = this, // In case you want to create a memoized method
+        args = Array.prototype.slice.call(arguments),
+        cb = args.pop(),
+        stringifiedArguments = String(argumentsStringifier(args)), // In case the function returns a non-string
+        resultCallbackParams = cache.get(cacheKeyPrefix + stringifiedArguments),
+        updateCache = false;
+
+    if (typeof resultCallbackParams !== 'undefined') {
+        if ((memoizer.refreshAge &amp;&amp; getAge.apply(null, args) &gt; memoizer.refreshAge) &amp;&amp; !waitingCallbacksByStringifiedArguments[stringifiedArguments
+]) {
+            updateCache = true;
+        }
+        defer(function () {
+            cb.apply(that, resultCallbackParams);
+        });
+    } else if (waitingCallbacksByStringifiedArguments[stringifiedArguments]) {
+        waitingCallbacksByStringifiedArguments[stringifiedArguments].push(cb);
+    } else {
+        waitingCallbacksByStringifiedArguments[stringifiedArguments] = [cb];
+        updateCache = true;
+    }
+
+    if (updateCache) {
+        lambda.apply(options.context || that, args.concat(function () { // ...
+            var resultCallbackParams = Array.prototype.slice.call(arguments),
+                waitingCallbacks = waitingCallbacksByStringifiedArguments[stringifiedArguments];
+            if (!resultCallbackParams[0] || options.errors) {
+                cache.set(cacheKeyPrefix + stringifiedArguments, resultCallbackParams);
+            }
+            if (waitingCallbacks) {
+                delete waitingCallbacksByStringifiedArguments[stringifiedArguments];
+                // Wait another tick in case an ill-behaved lambda called its callback immediately:
+                defer(function () {
+                    waitingCallbacks.forEach(function (cb) {
+                        cb.apply(that, resultCallbackParams);
+                    });
+                });
+            }
+        }));
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.setBinaryPath" id="apidoc.element.pngquant.setBinaryPath">
+        function <span class="apidocSignatureSpan">pngquant.</span>setBinaryPath
+        <span class="apidocSignatureSpan">(binaryPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setBinaryPath = function (binaryPath) {
+    PngQuant.binaryPath = binaryPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.super_" id="apidoc.element.pngquant.super_">
+        function <span class="apidocSignatureSpan">pngquant.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Stream() {
+  EE.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pngquant.getBinaryPath" id="apidoc.module.pngquant.getBinaryPath">module pngquant.getBinaryPath</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.getBinaryPath" id="apidoc.element.pngquant.getBinaryPath.getBinaryPath">
+        function <span class="apidocSignatureSpan">pngquant.</span>getBinaryPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function memoizer() { // ...
+    var that = this, // In case you want to create a memoized method
+        args = Array.prototype.slice.call(arguments),
+        cb = args.pop(),
+        stringifiedArguments = String(argumentsStringifier(args)), // In case the function returns a non-string
+        resultCallbackParams = cache.get(cacheKeyPrefix + stringifiedArguments),
+        updateCache = false;
+
+    if (typeof resultCallbackParams !== 'undefined') {
+        if ((memoizer.refreshAge &amp;&amp; getAge.apply(null, args) &gt; memoizer.refreshAge) &amp;&amp; !waitingCallbacksByStringifiedArguments[stringifiedArguments
+]) {
+            updateCache = true;
+        }
+        defer(function () {
+            cb.apply(that, resultCallbackParams);
+        });
+    } else if (waitingCallbacksByStringifiedArguments[stringifiedArguments]) {
+        waitingCallbacksByStringifiedArguments[stringifiedArguments].push(cb);
+    } else {
+        waitingCallbacksByStringifiedArguments[stringifiedArguments] = [cb];
+        updateCache = true;
+    }
+
+    if (updateCache) {
+        lambda.apply(options.context || that, args.concat(function () { // ...
+            var resultCallbackParams = Array.prototype.slice.call(arguments),
+                waitingCallbacks = waitingCallbacksByStringifiedArguments[stringifiedArguments];
+            if (!resultCallbackParams[0] || options.errors) {
+                cache.set(cacheKeyPrefix + stringifiedArguments, resultCallbackParams);
+            }
+            if (waitingCallbacks) {
+                delete waitingCallbacksByStringifiedArguments[stringifiedArguments];
+                // Wait another tick in case an ill-behaved lambda called its callback immediately:
+                defer(function () {
+                    waitingCallbacks.forEach(function (cb) {
+                        cb.apply(that, resultCallbackParams);
+                    });
+                });
+            }
+        }));
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.argumentsStringifier" id="apidoc.element.pngquant.getBinaryPath.argumentsStringifier">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>argumentsStringifier
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">argumentsStringifier = function (args) {
+    return args.map(String).join('\x1d'); // Group separator
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.getAge" id="apidoc.element.pngquant.getBinaryPath.getAge">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>getAge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAge = function () { // ...
+    var entry = cache._cache[cacheKeyPrefix + argumentsStringifier(Array.prototype.slice.call(arguments))];
+    if (!entry) {
+        return -1;
+    }
+    if (entry.now === 0) {
+        // node-lru doesn't bother maintaining entry.now when there's no maxAge specified.
+        return;
+    }
+    return Date.now() - entry.now;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.getTtl" id="apidoc.element.pngquant.getBinaryPath.getTtl">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>getTtl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTtl = function () { // ...
+    var entry = cache._cache[cacheKeyPrefix + argumentsStringifier(Array.prototype.slice.call(arguments))];
+    if (!entry) {
+        return -1;
+    }
+    if (entry.now === 0) {
+        // node-lru doesn't bother maintaining entry.now when there's no maxAge specified.
+        return;
+    }
+    return Math.max(-1, entry.now - Date.now() + cache._maxAge);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.peek" id="apidoc.element.pngquant.getBinaryPath.peek">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>peek
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">peek = function () { // ...
+    return cache.peek(cacheKeyPrefix + argumentsStringifier(Array.prototype.slice.call(arguments)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.purge" id="apidoc.element.pngquant.getBinaryPath.purge">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>purge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">purge = function () { // ...
+    cache.del(cacheKeyPrefix + argumentsStringifier(Array.prototype.slice.call(arguments)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.purgeAll" id="apidoc.element.pngquant.getBinaryPath.purgeAll">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.</span>purgeAll
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">purgeAll = function () {
+    // Cannot use cache.forEach with cache.del in the callback, that screws up the iteration.
+    var keys = cache.keys();
+    for (var i = 0 ; i &lt; keys.length ; i += 1) {
+        var key = keys[i];
+        if (key.indexOf(cacheKeyPrefix) === 0) {
+            cache.del(key);
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pngquant.getBinaryPath.cache" id="apidoc.module.pngquant.getBinaryPath.cache">module pngquant.getBinaryPath.cache</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.pngquant.getBinaryPath.cache._lengthCalculator" id="apidoc.element.pngquant.getBinaryPath.cache._lengthCalculator">
+        function <span class="apidocSignatureSpan">pngquant.getBinaryPath.cache.</span>_lengthCalculator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function naiveLength() { return 1 }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
